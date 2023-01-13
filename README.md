@@ -29,4 +29,6 @@ Shingling is the method of tokenizing text according to the characters of the te
 The next step in the process in MinHashing, which takes the sparse vector derived from shingling and converts into a dense vector. These dense vectors are then input into the Locality Sensitive Hashing algorithm. Unlike other hashing algorithms, LSH seeks to maximize conflicts between the inputted vectors to create candidate pairs. This is especially beneficial for large sets of data as the greater number of collisions result in candiate pairs being identified in a more efficient manner. 
 
 # Future Goals
-To create a working and functional POC of the BDM process on Databricks
+* Update process to automate shingling given input parameters
+* Intelligently cache the comparisons, so prior comparisons are not duplicated
+* Create a working and functional POC of the BDM process on Databricks
